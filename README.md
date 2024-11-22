@@ -1,3 +1,6 @@
+# Ember-template-lint fails to work with editor on gts/gjs files
+As far as I can tell, ELS + ember-template-lint doesn't show linting errors against gts/gjs files in vscode. Errors only show when running npm run lint.
+
 # ember-ts
 
 This README outlines the details of collaborating on this Ember application.
