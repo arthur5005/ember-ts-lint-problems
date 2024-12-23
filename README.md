@@ -1,6 +1,8 @@
 # "Type instantiation is excessively deep and possibly infinite." for component helper typing with templated (generic) components
 As far as I can tell `glint` has problems with the `component helper` in a yield definition when using a templated typed component (generics) when using `WithBoundArgs`
 
+<img width="1205" alt="Screenshot 2024-12-23 at 9 54 42 AM" src="https://github.com/user-attachments/assets/c59ec324-b06b-49ae-85a2-46c04a2b1503" />
+
 # ember-ts
 
 This README outlines the details of collaborating on this Ember application.
