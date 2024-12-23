@@ -1,16 +1,22 @@
 import Component from '@glimmer/component';
 import SubComponent from './sub';
+import type { WithBoundArgs } from '@glint/template';
+import { hash } from '@ember/helper';
 
-export default class TestComponent extends Component {
+export default class TestComponent extends Component<{
+  Blocks: {
+    default: [
+      { sub: WithBoundArgs<typeof SubComponent<string>, 'boundValue'> },
+    ];
+  };
+}> {
   get test() {
     return 'test';
   }
 
   <template>
-    {{! should emit a lint error for non interactive }}
-    <div role='button'>
-      {{! should emit a lint error for curly braces }}
-      <SubComponent @test={{'hello world'}} />
+    <div>
+      {{yield (hash sub=(component SubComponent boundValue='foo'))}}
     </div>
   </template>
 }

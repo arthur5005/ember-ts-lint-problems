@@ -1,5 +1,5 @@
-# Ember-template-lint fails to work with editor on gts/gjs files
-As far as I can tell, ELS + ember-template-lint doesn't show linting errors against gts/gjs files in vscode. Errors only show when running npm run lint.
+# "Type instantiation is excessively deep and possibly infinite." for component helper typing with templated (generic) components
+As far as I can tell `glint` has problems with the `component helper` in a yield definition when using a templated typed component (generics) when using `WithBoundArgs`
 
 # ember-ts
 
